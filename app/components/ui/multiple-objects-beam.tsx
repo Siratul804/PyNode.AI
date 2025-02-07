@@ -71,7 +71,7 @@ export function AnimatedBeamMultiple({ className }: { className?: string }) {
   return (
     <div
       className={cn(
-        "relative flex h-[400px] w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 md:shadow-xl",
+        "relative flex h-[400px] w-full items-center justify-center overflow-hidden rounded-lg bg-background p-10 ",
         className
       )}
       ref={containerRef}
