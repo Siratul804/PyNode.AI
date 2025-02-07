@@ -5,18 +5,20 @@ import CodeShowcase from "@/app/components/code-showcase";
 import CTA from "@/app/components/cta";
 import Footer from "@/app/components/footer";
 import { HeroVideo } from "./components/HeroVideo";
+import BeamMultiple from "./components/BeamMultiple";
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow">
-        <Hero />
-        <CodeShowcase />
-        <HeroVideo />
-        <Features />
-        <CTA />
-      </main>
+
+      <Hero />
+      <BeamMultiple />
+      <CodeShowcase />
+      <HeroVideo />
+      <Features />
+      <CTA />
+
       <Footer />
     </div>
   );
