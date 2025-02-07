@@ -24,6 +24,12 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center space-x-6">
           <Link
+            href="#"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Home
+          </Link>
+          <Link
             href="#features"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
@@ -33,14 +39,9 @@ export default function Header() {
             href="#code"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
-            Code
+            Docs
           </Link>
-          <Link
-            href="#testimonials"
-            className="text-sm font-medium hover:text-primary transition-colors"
-          >
-            Testimonials
-          </Link>
+
           <Button variant="default">Get Started</Button>
           <ThemeToggle />
         </nav>
