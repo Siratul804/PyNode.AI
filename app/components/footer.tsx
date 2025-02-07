@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Github, Twitter, Linkedin } from "lucide-react";
+import { Github } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,20 +19,9 @@ export default function Footer() {
               href="#"
               className="text-sm  hover:text-primary transition-colors"
             >
-              About
-            </Link>
-            <Link
-              href="#"
-              className="text-sm  hover:text-primary transition-colors"
-            >
               Documentation
             </Link>
-            <Link
-              href="#"
-              className="text-sm  hover:text-primary transition-colors"
-            >
-              Blog
-            </Link>
+
             <Link
               href="#"
               className="text-sm  hover:text-primary transition-colors"
@@ -48,12 +37,6 @@ export default function Footer() {
           <div className="flex space-x-4">
             <Link href="#" className=" hover:text-primary transition-colors">
               <Github className="w-5 h-5" />
-            </Link>
-            <Link href="#" className=" hover:text-primary transition-colors">
-              <Twitter className="w-5 h-5" />
-            </Link>
-            <Link href="#" className=" hover:text-primary transition-colors">
-              <Linkedin className="w-5 h-5" />
             </Link>
           </div>
         </div>

@@ -7,12 +7,12 @@ import { Code2 } from "lucide-react";
 
 export default function Hero() {
   return (
-    <div className="relative py-10 flex items-center justify-center  overflow-hidden">
+    <div className="relative lg:py-16 flex items-center justify-center  overflow-hidden">
       {/* Grid Background */}
       <div className="absolute inset-0 opacity-20" />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-32 text-center">
+      <div className="relative z-10 container mx-auto px-4 lg:py-32 py-10 text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

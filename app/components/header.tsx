@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Github } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
@@ -42,8 +43,11 @@ export default function Header() {
             Docs
           </Link>
 
-          <Button variant="default">Get Started</Button>
           <ThemeToggle />
+          <Button variant="default">Get Started</Button>
+          <Link href="#" className=" hover:text-primary transition-colors">
+            <Github className="w-5 h-5" />
+          </Link>
         </nav>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
