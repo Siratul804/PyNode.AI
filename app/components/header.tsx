@@ -13,6 +13,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/app/components/theme-toggle";
+import { Code2 } from "lucide-react";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,8 @@ export default function Header() {
   return (
     <header className="border-b bg-background/80 backdrop-blur-md sticky top-0 z-50">
       <div className="px-8 flex items-center justify-between py-4">
-        <Link href="/" className="text-2xl font-bold text-primary">
+        <Link href="/" className="text-2xl font-bold text-primary flex ">
+          <Code2 className="w-4 h-4" />
           PyNode<span className="">.AI</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-6">
@@ -82,10 +84,10 @@ export default function Header() {
               >
                 Testimonials
               </Link>
+              <ThemeToggle />
               <Button variant="default" onClick={() => setIsOpen(false)}>
                 Get Started
               </Button>
-              <ThemeToggle />
             </nav>
           </SheetContent>
         </Sheet>

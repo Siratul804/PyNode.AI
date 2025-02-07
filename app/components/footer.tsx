@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Github } from "lucide-react";
+import { Code2 } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -7,7 +8,8 @@ export default function Footer() {
       <div className=" px-8 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <Link href="/" className="text-xl font-bold text-primary">
+            <Link href="/" className="text-2xl font-bold text-primary flex ">
+              <Code2 className="w-4 h-4" />
               PyNode<span className="">.AI</span>
             </Link>
             <p className="mt-2 text-sm ">

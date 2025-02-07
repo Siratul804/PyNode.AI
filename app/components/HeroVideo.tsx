@@ -4,10 +4,12 @@ export const HeroVideo = () => {
   return (
     <>
       <div className="flex justify-center">
-        <h1 className="text-2xl font-bold">Experience PyNode.AI in Action</h1>
+        <h1 className="text-2xl font-bold md:p-0 p-5 ">
+          Experience PyNode.AI in Action
+        </h1>
       </div>
       <div className="flex justify-center pb-4 ">
-        <p className="text-sm py-1 ">
+        <p className="text-sm py-1 md:p-0 p-5 ">
           Watch a quick demo of seamless coding and AI-powered assistance.
         </p>
       </div>
