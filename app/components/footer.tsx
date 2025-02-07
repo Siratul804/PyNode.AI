@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm mb-4 md:mb-0">
-            © 2023 PyNode.AI. All rights reserved.
+            © 2025 PyNode.AI. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Link href="#" className=" hover:text-primary transition-colors">

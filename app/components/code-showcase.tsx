@@ -44,7 +44,7 @@ export default function CodeShowcase() {
           transition={{ duration: 0.5 }}
         >
           <Tabs defaultValue="python" className="max-w-3xl mx-auto">
-            <TabsList className="grid w-full grid-cols-2">
+            <TabsList className="grid w-full grid-cols-2  ">
               <TabsTrigger
                 value="python"
                 onClick={() => setActiveTab("python")}
@@ -59,12 +59,12 @@ export default function CodeShowcase() {
               </TabsTrigger>
             </TabsList>
             <TabsContent value="python">
-              <pre className="p-4 rounded-lg bg-gray-900 text-gray-100 overflow-x-auto">
+              <pre className="p-4 rounded-xl bg-[#18181B] text-gray-100 overflow-x-auto">
                 <code>{codeExamples.python}</code>
               </pre>
             </TabsContent>
             <TabsContent value="nodejs">
-              <pre className="p-4 rounded-lg bg-gray-900 text-gray-100 overflow-x-auto">
+              <pre className="p-4 rounded-xl bg-[#18181B] text-gray-100 overflow-x-auto">
                 <code>{codeExamples.nodejs}</code>
               </pre>
             </TabsContent>

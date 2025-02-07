@@ -4,6 +4,7 @@ import Features from "@/app/components/features";
 import CodeShowcase from "@/app/components/code-showcase";
 import CTA from "@/app/components/cta";
 import Footer from "@/app/components/footer";
+import { HeroVideo } from "./components/HeroVideo";
 
 export default function Home() {
   return (
@@ -11,8 +12,9 @@ export default function Home() {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <Features />
         <CodeShowcase />
+        <HeroVideo />
+        <Features />
         <CTA />
       </main>
       <Footer />
