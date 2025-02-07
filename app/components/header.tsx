@@ -46,7 +46,7 @@ export default function Header() {
           </Link>
 
           <ThemeToggle />
-          <Button variant="default">Get Started</Button>
+
           <Link href="#" className=" hover:text-primary transition-colors">
             <Github className="w-5 h-5" />
           </Link>
@@ -85,9 +85,6 @@ export default function Header() {
                 Testimonials
               </Link>
               <ThemeToggle />
-              <Button variant="default" onClick={() => setIsOpen(false)}>
-                Get Started
-              </Button>
             </nav>
           </SheetContent>
         </Sheet>

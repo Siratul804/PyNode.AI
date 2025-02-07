@@ -20,7 +20,9 @@ export default function CTA() {
             Join thousands of developers who are building amazing AI-powered
             applications with PyNode.AI
           </p>
-          <Button size="lg">Get Started Now</Button>
+          <Button size="lg" className="animate-bounce">
+            Get Started Now
+          </Button>
         </motion.div>
       </div>
     </section>
