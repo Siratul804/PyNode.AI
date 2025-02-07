@@ -27,7 +27,7 @@ export default function Header() {
         </Link>
         <nav className="hidden md:flex items-center space-x-6">
           <Link
-            href="#"
+            href="/"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Home
@@ -39,7 +39,7 @@ export default function Header() {
             Features
           </Link>
           <Link
-            href="#code"
+            href="/docs"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Docs
@@ -71,18 +71,18 @@ export default function Header() {
                 Features
               </Link>
               <Link
-                href="#code"
+                href="/docs"
                 className="text-lg font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Code
+                Docs
               </Link>
               <Link
-                href="#testimonials"
+                href="#features"
                 className="text-lg font-medium"
                 onClick={() => setIsOpen(false)}
               >
-                Testimonials
+                Features
               </Link>
               <ThemeToggle />
             </nav>
