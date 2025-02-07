@@ -20,7 +20,7 @@ export default function Hero() {
             Simplify <span className="text-primary">AI Model Integration</span>{" "}
             with PyNode.AI
           </h1>
-          <p className="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="mt-6 text-xl max-w-3xl mx-auto">
             Comprehensive code examples and documentation for both Python and
             Node.js. Build and deploy your AI projects faster with our
             cross-platform resources.

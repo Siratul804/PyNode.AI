@@ -16,7 +16,7 @@ export default function CTA() {
           <h2 className="text-3xl font-bold mb-4">
             Ready to Simplify Your AI Integration?
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-xl mb-8">
             Join thousands of developers who are building amazing AI-powered
             applications with PyNode.AI
           </p>

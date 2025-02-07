@@ -11,17 +11,18 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ThemeToggle } from "@/app/components/theme-toggle";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="border-b bg-white/80 backdrop-blur-md sticky top-0 z-50">
-      <div className=" px-8 flex items-center justify-between py-4">
+    <header className="border-b bg-background/80 backdrop-blur-md sticky top-0 z-50">
+      <div className="px-8 flex items-center justify-between py-4">
         <Link href="/" className="text-2xl font-bold text-primary">
-          PyNode<span className="text-slate-500">.AI</span>
+          PyNode<span className="">.AI</span>
         </Link>
-        <nav className=" md:flex hidden space-x-6 lg:flex lg:items-center  ">
+        <nav className="hidden md:flex items-center space-x-6">
           <Link
             href="#features"
             className="text-sm font-medium hover:text-primary transition-colors"
@@ -32,10 +33,16 @@ export default function Header() {
             href="#code"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
-            Docs
+            Code
           </Link>
-
+          <Link
+            href="#testimonials"
+            className="text-sm font-medium hover:text-primary transition-colors"
+          >
+            Testimonials
+          </Link>
           <Button variant="default">Get Started</Button>
+          <ThemeToggle />
         </nav>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
@@ -73,6 +80,7 @@ export default function Header() {
               <Button variant="default" onClick={() => setIsOpen(false)}>
                 Get Started
               </Button>
+              <ThemeToggle />
             </nav>
           </SheetContent>
         </Sheet>
