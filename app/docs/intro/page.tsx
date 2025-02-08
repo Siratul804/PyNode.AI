@@ -14,7 +14,7 @@ export default function Into() {
         {/* Breadcrumb */}
         <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-8">
           <Link
-            href="/docs"
+            href="/docs/intro"
             className="hover:text-foreground transition-colors"
           >
             Docs
