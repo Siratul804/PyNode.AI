@@ -9,8 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <SidebarProvider>
         <AppSidebar />
         <main>
-          <SidebarTrigger />
-          {children}
+          <div className=" p-4 w-auto">{children}</div>
         </main>
       </SidebarProvider>
     </>

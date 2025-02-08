@@ -42,10 +42,9 @@ const items = [
 
 export function AppSidebar() {
   return (
-    <Sidebar className="py-20">
+    <Sidebar className="py-20" collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Application</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
