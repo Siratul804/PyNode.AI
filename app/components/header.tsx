@@ -39,7 +39,7 @@ export default function Header() {
             Features
           </Link>
           <Link
-            href="/docs"
+            href="/docs/intro"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Docs
@@ -71,7 +71,7 @@ export default function Header() {
                 Features
               </Link>
               <Link
-                href="/docs"
+                href="/docs/intro"
                 className="text-lg font-medium"
                 onClick={() => setIsOpen(false)}
               >
