@@ -28,33 +28,38 @@ export default function Into() {
           <h1 className="text-4xl font-bold tracking-tight">Introduction</h1>
 
           <p className="text-md text-muted-foreground">
-            Beautifully designed components that you can copy and paste into
-            your apps. Accessible. Customizable. Open Source.
+            Beautifully documented code examples for integrating AI models into
+            your apps. Accessible. Customizable. Open Source (presumably, given
+            the focus on code examples).
           </p>
 
           <div className="space-y-4">
             <p className="text-md">
-              This is <span className="font-bold">NOT</span> a component
-              library. It's a collection of re-usable components that you can
-              copy and paste into your apps.
+              This is <span className="font-bold">NOT</span> a pre-built AI
+              model or a cloud-hosted AI service. It's a collection of reusable
+              code examples and documentation that you can copy and adapt for
+              your AI integration needs.
             </p>
 
             <h2 className="text-md font-semibold mt-8">
-              What do you mean by not a component library?
+              What do you mean by not a pre-built AI model or cloud service?
             </h2>
 
             <p className="text-md">
-              I mean you do not install it as a dependency. It is not available
-              or distributed via npm.
+              I mean you do not install a specific PyNode.AI package or connect
+              to a PyNode.AI hosted service.
             </p>
 
             <p className="text-md">
-              Pick the components you need. Copy and paste the code into your
-              project and customize to your needs. The code is yours.
+              Pick the code examples relevant to your AI model and platform
+              (Python or Node.js). Copy and paste the code into your project and
+              customize it to your specific AI model and application. The code
+              is yours to modify and use.
             </p>
 
             <p className="text-md italic">
-              Use this as a reference to build your own component libraries.
+              Use this as a reference to build your own AI integration
+              solutions.
             </p>
           </div>
 
@@ -65,22 +70,15 @@ export default function Into() {
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-md">
-                  Why copy/paste and not packaged as a dependency?
+                  Why copy/paste code examples and not provide a pre-built
+                  library or service?
                 </AccordionTrigger>
                 <AccordionContent>
-                  The goal is to give you ownership and control over the code,
-                  allowing you to customize and maintain it according to your
-                  needs.
-                </AccordionContent>
-              </AccordionItem>
-
-              <AccordionItem value="item-2">
-                <AccordionTrigger className="text-md">
-                  Do you plan to publish it as an npm package?
-                </AccordionTrigger>
-                <AccordionContent>
-                  No. This is meant to be a reference implementation that you
-                  can copy, paste, and customize for your specific needs.
+                  The copy/paste approach prioritizes flexibility,
+                  customization, and educational value by allowing developers to
+                  directly adapt and understand the integration code. It also
+                  reduces maintenance overhead compared to building and
+                  supporting multiple libraries.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
