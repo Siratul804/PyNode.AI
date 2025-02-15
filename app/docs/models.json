@@ -8,7 +8,7 @@
     },
     {
       "title": "Gemini",
-      "install": "pip install google-generativeai \n npm install @google/generative-ai",
+      "install": "pip install google-generativeai or npm install @google/generative-ai",
       "pythonCode": "import google.generativeai as genai\n\n# Replace with your API key\ngenai.configure(api_key=\"your-api-key\")\n\ndef get_gemini_response(prompt):\n    try:\n        model = genai.GenerativeModel(\"gemini-pro\")\n        response = model.generate_content(prompt)\n        return response.text\n    except Exception as e:\n        return f\"Error: {str(e)}\"\n\n# Example usage\nuser_input = input(\"Enter your prompt: \")\nai_response = get_gemini_response(user_input)\nprint(\"AI Response:\", ai_response)",
       "nodejsCode": "const { GoogleGenerativeAI } = require(\"@google/generative-ai\");\n\n// Replace with your API key\nconst genAI = new GoogleGenerativeAI(\"your-api-key\");\n\nasync function getGeminiResponse(prompt) {\n    try {\n        const model = genAI.getGenerativeModel({ model: \"gemini-pro\" });\n        const result = await model.generateContent(prompt);\n        console.log(\"AI Response:\", result.response.text);\n    } catch (error) {\n        console.error(\"Error:\", error);\n    }\n}\n\nconst userInput = \"Hello, how can AI help me today?\";\ngetGeminiResponse(userInput);",
       "apiKeyUrl": "https://console.cloud.google.com/apis/credentials"

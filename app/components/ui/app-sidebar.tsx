@@ -40,10 +40,10 @@ const items = [
     children: [
       {
         title: "Gemini",
-        url: "/models/free/gemini",
+        url: "/docs/gemini",
       },
       {
-        title: "BLOOM",
+        title: "Grok",
         url: "/models/free/bloom",
       },
       {

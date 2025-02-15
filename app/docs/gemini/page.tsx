@@ -24,11 +24,11 @@ import Link from "next/link";
 const CodePreview = () => {
   // Filter to only include the service with title "ChatGPT"
   const filteredServices = CODE_SAMPLES.filter(
-    (service) => service.title === "ChatGPT"
+    (service) => service.title === "Gemini"
   );
 
   // Since we only have ChatGPT, we initialize with "ChatGPT"
-  const [selectedService, setSelectedService] = useState("ChatGPT");
+  const [selectedService, setSelectedService] = useState("Gemini");
   const [selectedLanguage, setSelectedLanguage] = useState("python");
   const [copied, setCopied] = useState<string | null>(null);
 
@@ -149,7 +149,7 @@ const AIInteraction: React.FC<AIInteractionProps> = ({
 }) => {
   // Moved filteredServices declaration here, before the return statement.
   const filteredServices = CODE_SAMPLES.filter(
-    (service) => service.title === "ChatGPT"
+    (service) => service.title === "Gemini"
   );
 
   return (
