@@ -47,7 +47,11 @@ export default function Header() {
 
           <ThemeToggle />
 
-          <Link href="#" className=" hover:text-primary transition-colors">
+          <Link
+            href="https://github.com/Siratul804/PyNode.AI"
+            target="_blank"
+            className=" hover:text-primary transition-colors"
+          >
             <Github className="w-5 h-5" />
           </Link>
         </nav>

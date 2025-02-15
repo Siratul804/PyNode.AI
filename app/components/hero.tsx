@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Code2 } from "lucide-react";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -57,9 +58,11 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            <Button size="lg" variant="default" className="text-base px-8">
-              View Documentation
-            </Button>
+            <Link href="/docs/intro">
+              <Button size="lg" variant="default" className="text-base px-8">
+                View Documentation
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>

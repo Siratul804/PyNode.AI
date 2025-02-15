@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -20,9 +21,11 @@ export default function CTA() {
             Join thousands of developers who are building amazing AI-powered
             applications with PyNode.AI
           </p>
-          <Button size="lg" className="animate-bounce">
-            Get Started Now
-          </Button>
+          <Link href="/docs/intro">
+            <Button size="lg" className="animate-bounce">
+              Get Started Now
+            </Button>
+          </Link>
         </motion.div>
       </div>
     </section>

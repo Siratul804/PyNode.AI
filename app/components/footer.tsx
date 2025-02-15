@@ -25,7 +25,7 @@ export default function Footer() {
             </Link>
 
             <Link
-              href="#"
+              href="mailto: islamsiratul@gmail.com"
               className="text-sm  hover:text-primary transition-colors"
             >
               Contact
