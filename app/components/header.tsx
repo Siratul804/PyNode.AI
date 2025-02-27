@@ -33,7 +33,7 @@ export default function Header() {
             Home
           </Link>
           <Link
-            href="#features"
+            href="/#features"
             className="text-sm font-medium hover:text-primary transition-colors"
           >
             Features
