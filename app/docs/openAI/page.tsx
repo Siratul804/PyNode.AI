@@ -57,7 +57,7 @@ const CodePreview = () => {
             {filteredServices.map((service) => (
               <div
                 key={service.title}
-                className="text-slate-300 font-mono text-sm"
+                className="dark:text-slate-300 text-black font-mono text-sm"
               >
                 {service.install}
               </div>
