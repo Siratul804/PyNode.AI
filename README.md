@@ -1,5 +1,3 @@
-
-
 <div align="center">
 
 <br />
@@ -7,9 +5,9 @@
 <a href="https://pynodeai.vercel.app/"> 
 <img src="/public/pynode.png" alt="ide" width="500"/>
 </a>
-  
 
-###  Integrate, Develop, and Deploy Seamlessly.
+
+### Integrate, Develop, and Deploy Seamlessly.
 
 [Report Bug](https://github.com/Siratul804/PyNode.AI/issues) · [Request Feature](https://github.com/Siratul804/PyNode.AI/issues) · [Pull Request](https://github.com/Siratul804/PyNode.AI/pulls)
 
@@ -34,14 +32,13 @@
 
 ### <a href="/public/pynode.mp4"> Demo Video</a>
 
-
 ## 🚀 Installation Guide
 
 ### Prerequisites
 
 - Node.js 18+ and npm 9+
 - Required API keys:
-  - Gemini 
+  - Gemini
 
 ### 🖥️ Local Development
 
@@ -66,12 +63,20 @@ npm run dev
 # Open http://localhost:3000
 ```
 
+### 🐳 Docker Setup
+
+```bash
+docker pull siratul12/pynodeai
+docker run -p 3000:3000 siratul12/pynodeai
+# Open http://localhost:3000
+```
+
 ### Troubleshooting
 
 - **Environment**: Double-check API keys and MongoDB connection
 - **Port Conflict**: Use `npm run dev -- -p 3001` for alternate port
 
-##  Tech Stack
+## Tech Stack
 
 ### Frontend
 
