@@ -47,8 +47,8 @@ const items = [
         url: "/models/free/bloom",
       },
       {
-        title: "GPT-J",
-        url: "/models/free/gpt-j",
+        title: "Ollama",
+        url: "/docs/ollama",
       },
     ],
   },
