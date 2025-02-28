@@ -18,7 +18,7 @@ export const HeroVideo = () => {
         <HeroVideoDialog
           className="w-full md:w-3/4 lg:w-2/3"
           animationStyle="top-in-bottom-out"
-          videoSrc="https://video.gumlet.io/67874608a0795ccd0d9ce474/67874673a0795ccd0d9ce60e/download.mp4"
+          videoSrc="/pynode.mp4"
           thumbnailSrc="/thum.png"
           thumbnailAlt="Hero Video"
         />
