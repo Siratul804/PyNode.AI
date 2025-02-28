@@ -39,7 +39,7 @@
       "install": "pip install requests or npm install axios",
       "pythonCode": "import requests\n\nurl = 'https://api.anthropic.com/v1/your-endpoint'\nheaders = {\n    'Authorization': 'Bearer YOUR_API_KEY',\n    'Content-Type': 'application/json'\n}\n\nresponse = requests.get(url, headers=headers)\nprint(response.json())",
       "nodejsCode": "const axios = require('axios');\n\nconst url = 'https://api.anthropic.com/v1/your-endpoint';\nconst headers = {\n    'Authorization': 'Bearer YOUR_API_KEY',\n    'Content-Type': 'application/json'\n};\n\naxios.get(url, { headers })\n    .then(response => {\n        console.log(response.data);\n    })\n    .catch(error => {\n        console.error('Error fetching data:', error);\n    });",
-      "apiKeyUrl": "https://console.anthropic.com/account/api-keys"
+      "apiKeyUrl": "https://claude.ai/login?returnTo=%2F%3F"
     }
   ]
   

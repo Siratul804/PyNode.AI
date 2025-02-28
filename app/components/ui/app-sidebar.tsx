@@ -73,20 +73,7 @@ const items = [
   {
     title: "Hugging Face",
     icon: Smile,
-    children: [
-      {
-        title: "BERT",
-        url: "/models/huggingface/bert",
-      },
-      {
-        title: "RoBERTa",
-        url: "/models/huggingface/roberta",
-      },
-      {
-        title: "T5",
-        url: "/models/huggingface/t5",
-      },
-    ],
+    url: "https://huggingface.co/models",
   },
 ];
 
@@ -105,7 +92,7 @@ export function AppSidebar() {
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   {item.children ? (
-                    <Collapsible>
+                    <Collapsible defaultOpen={true}>
                       <CollapsibleTrigger asChild>
                         <SidebarMenuButton>
                           <item.icon />
