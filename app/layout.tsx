@@ -6,10 +6,21 @@ import type { Metadata } from "next";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "PyNode.AI",
   description:
     "PyNode.AI simplifies AI model integration with comprehensive code examples and documentation for both Python and Node.js.  Build and deploy your AI projects faster with our cross-platform resources.",
+  metadataBase: new URL("https://pynodeai.vercel.app/"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-US": "/en-US",
+      "de-DE": "/de-DE",
+    },
+  },
+  openGraph: {
+    images: "/thum.png",
+  },
 };
 
 export default function RootLayout({
