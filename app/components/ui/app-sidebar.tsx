@@ -61,8 +61,8 @@ const items = [
         url: "/docs/openAI",
       },
       {
-        title: "GPT-4",
-        url: "/models/paid/gpt-4",
+        title: "DeepSeek AI",
+        url: "/docs/deepSeek",
       },
       {
         title: "Claude",
