@@ -43,8 +43,8 @@ const items = [
         url: "/docs/gemini",
       },
       {
-        title: "Grok",
-        url: "/models/free/bloom",
+        title: "Groq",
+        url: "/docs/groq",
       },
       {
         title: "Ollama",
