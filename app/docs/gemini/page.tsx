@@ -22,12 +22,10 @@ import Link from "next/link";
 // CodePreview Component
 // ---------------------
 const CodePreview = () => {
-  // Filter to only include the service with title "ChatGPT"
   const filteredServices = CODE_SAMPLES.filter(
     (service) => service.title === "Gemini"
   );
 
-  // Since we only have ChatGPT, we initialize with "ChatGPT"
   const [selectedService, setSelectedService] = useState("Gemini");
   const [selectedLanguage, setSelectedLanguage] = useState("python");
   const [copied, setCopied] = useState<string | null>(null);
@@ -147,7 +145,6 @@ const AIInteraction: React.FC<AIInteractionProps> = ({
   isLoading,
   aiResponse,
 }) => {
-  // Moved filteredServices declaration here, before the return statement.
   const filteredServices = CODE_SAMPLES.filter(
     (service) => service.title === "Gemini"
   );
@@ -237,6 +234,7 @@ const AIInteraction: React.FC<AIInteractionProps> = ({
 export default function AIIntegrationPage(): JSX.Element {
   const [userInput, setUserInput] = useState<string>("");
   const [aiResponse, setAIResponse] = useState<string>("");
+
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSubmit = async (
@@ -244,14 +242,30 @@ export default function AIIntegrationPage(): JSX.Element {
   ): Promise<void> => {
     e.preventDefault();
     setIsLoading(true);
+
+    setAIResponse("");
+
     try {
-      // Simulate an API call
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      setAIResponse(
-        `Mock response to: "${userInput}"\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
-      );
+      const response = await fetch("/api/gemini", {
+        method: "POST",
+        body: JSON.stringify({ query: userInput }),
+        headers: { "Content-Type": "application/json" },
+        cache: "force-cache",
+      });
+
+      console.log("Response Status:", response.status); // Added logging
+
+      if (!response.ok) {
+        throw new Error("Failed to fetch response");
+      }
+
+      const result = await response.json();
+
+      console.log("Result Data:", result.data); // Added logging
+
+      setAIResponse(result.data || "No response");
     } catch (error) {
-      console.error(error);
+      console.error("Error:", error); // Added logging
     } finally {
       setIsLoading(false);
     }

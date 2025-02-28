@@ -5,6 +5,8 @@ export async function POST(req: Request): Promise<Response> {
   try {
     const body = await req.json();
     const { query } = body;
+    
+    console.log(query)
 
     // Validate input
     if (!query) {
