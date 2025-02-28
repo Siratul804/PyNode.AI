@@ -66,7 +66,7 @@ const items = [
       },
       {
         title: "Claude",
-        url: "/models/paid/claude",
+        url: "/docs/claude",
       },
     ],
   },
